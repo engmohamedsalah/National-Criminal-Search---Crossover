@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="NationalCriminal">
+  <DataContextMoniker Name="/NationalCriminalDataContext" />
+  <nestedChildShapes>
+    <classShape Id="311ddc0c-469e-4f8c-96de-dd7a8ad31234" absoluteBounds="0.75, 1.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/NationalCriminalDataContext/Country" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c1578782-a82c-4b06-a739-6f0a2994603a" absoluteBounds="0.765, 1.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a60f3f61-5c0e-480b-a8d9-0b0b415a6fca" absoluteBounds="5.5, 1.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/NationalCriminalDataContext/CriminalProfile" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ed6cb834-d9d8-4f6e-a074-8de12f75901c" absoluteBounds="5.515, 2.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 2.54734537760417); (5.5 : 2.54734537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/NationalCriminalDataContext/Country/Country_CriminalProfile" />
+      <nodes>
+        <classShapeMoniker Id="311ddc0c-469e-4f8c-96de-dd7a8ad31234" />
+        <classShapeMoniker Id="a60f3f61-5c0e-480b-a8d9-0b0b415a6fca" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="4480dedd-1a68-44af-b461-32ed2bdbec2e" absoluteBounds="3.25, 0.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/NationalCriminalDataContext/Configuration" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bb2aa1f3-d68b-4b94-855c-ed0c375f6108" absoluteBounds="3.2649999999999997, 0.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

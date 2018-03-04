@@ -1,0 +1,15 @@
+C:\Users\mabdeltawab\Documents\Visual Studio 2015\Projects\NationalCriminal\NationalCriminal.Helper\bin\Debug\NationalCriminal.Helper.dll
+C:\Users\mabdeltawab\Documents\Visual Studio 2015\Projects\NationalCriminal\NationalCriminal.Helper\bin\Debug\NationalCriminal.Helper.pdb
+C:\Users\mabdeltawab\Documents\Visual Studio 2015\Projects\NationalCriminal\NationalCriminal.Helper\obj\Debug\NationalCriminal.Helper.dll
+C:\Users\mabdeltawab\Documents\Visual Studio 2015\Projects\NationalCriminal\NationalCriminal.Helper\obj\Debug\NationalCriminal.Helper.pdb
+C:\Users\mabdeltawab\Documents\Visual Studio 2015\Projects\NationalCriminal\NationalCriminal.Helper\obj\Debug\NationalCriminal.Helper.csprojResolveAssemblyReference.cache
+D:\New folder\Source\NationalCriminal\NationalCriminal.Helper\bin\Debug\NationalCriminal.Helper.dll
+D:\New folder\Source\NationalCriminal\NationalCriminal.Helper\bin\Debug\NationalCriminal.Helper.pdb
+D:\New folder\Source\NationalCriminal\NationalCriminal.Helper\obj\Debug\NationalCriminal.Helper.csprojResolveAssemblyReference.cache
+D:\New folder\Source\NationalCriminal\NationalCriminal.Helper\obj\Debug\NationalCriminal.Helper.dll
+D:\New folder\Source\NationalCriminal\NationalCriminal.Helper\obj\Debug\NationalCriminal.Helper.pdb
+D:\Mohamed Salah - CSharpAssignment\Source\NationalCriminal\NationalCriminal.Helper\bin\Debug\NationalCriminal.Helper.dll
+D:\Mohamed Salah - CSharpAssignment\Source\NationalCriminal\NationalCriminal.Helper\bin\Debug\NationalCriminal.Helper.pdb
+D:\Mohamed Salah - CSharpAssignment\Source\NationalCriminal\NationalCriminal.Helper\obj\Debug\NationalCriminal.Helper.csprojResolveAssemblyReference.cache
+D:\Mohamed Salah - CSharpAssignment\Source\NationalCriminal\NationalCriminal.Helper\obj\Debug\NationalCriminal.Helper.dll
+D:\Mohamed Salah - CSharpAssignment\Source\NationalCriminal\NationalCriminal.Helper\obj\Debug\NationalCriminal.Helper.pdb

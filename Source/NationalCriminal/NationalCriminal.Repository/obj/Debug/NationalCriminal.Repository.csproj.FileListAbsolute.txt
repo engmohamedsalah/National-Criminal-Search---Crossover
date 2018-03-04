@@ -1,0 +1,27 @@
+C:\Users\mabdeltawab\Documents\Visual Studio 2015\Projects\NationalCriminal\NationalCriminal.Repository\obj\Debug\NationalCriminal.Repository.csprojResolveAssemblyReference.cache
+C:\Users\mabdeltawab\Documents\Visual Studio 2015\Projects\NationalCriminal\NationalCriminal.Repository\bin\Debug\NationalCriminal.Repository.dll
+C:\Users\mabdeltawab\Documents\Visual Studio 2015\Projects\NationalCriminal\NationalCriminal.Repository\bin\Debug\NationalCriminal.Repository.pdb
+C:\Users\mabdeltawab\Documents\Visual Studio 2015\Projects\NationalCriminal\NationalCriminal.Repository\bin\Debug\NationalCriminal.DAL.dll
+C:\Users\mabdeltawab\Documents\Visual Studio 2015\Projects\NationalCriminal\NationalCriminal.Repository\bin\Debug\NationalCriminal.DAL.pdb
+C:\Users\mabdeltawab\Documents\Visual Studio 2015\Projects\NationalCriminal\NationalCriminal.Repository\obj\Debug\NationalCriminal.Repository.dll
+C:\Users\mabdeltawab\Documents\Visual Studio 2015\Projects\NationalCriminal\NationalCriminal.Repository\obj\Debug\NationalCriminal.Repository.pdb
+C:\Users\mabdeltawab\Documents\Visual Studio 2015\Projects\NationalCriminal\NationalCriminal.Repository\bin\Debug\NationalCriminal.Helper.dll
+C:\Users\mabdeltawab\Documents\Visual Studio 2015\Projects\NationalCriminal\NationalCriminal.Repository\bin\Debug\NationalCriminal.Helper.pdb
+D:\New folder\Source\NationalCriminal\NationalCriminal.Repository\bin\Debug\NationalCriminal.Repository.dll
+D:\New folder\Source\NationalCriminal\NationalCriminal.Repository\bin\Debug\NationalCriminal.Repository.pdb
+D:\New folder\Source\NationalCriminal\NationalCriminal.Repository\bin\Debug\NationalCriminal.DAL.dll
+D:\New folder\Source\NationalCriminal\NationalCriminal.Repository\bin\Debug\NationalCriminal.Helper.dll
+D:\New folder\Source\NationalCriminal\NationalCriminal.Repository\bin\Debug\NationalCriminal.DAL.pdb
+D:\New folder\Source\NationalCriminal\NationalCriminal.Repository\bin\Debug\NationalCriminal.Helper.pdb
+D:\New folder\Source\NationalCriminal\NationalCriminal.Repository\obj\Debug\NationalCriminal.Repository.csprojResolveAssemblyReference.cache
+D:\New folder\Source\NationalCriminal\NationalCriminal.Repository\obj\Debug\NationalCriminal.Repository.dll
+D:\New folder\Source\NationalCriminal\NationalCriminal.Repository\obj\Debug\NationalCriminal.Repository.pdb
+D:\Mohamed Salah - CSharpAssignment\Source\NationalCriminal\NationalCriminal.Repository\bin\Debug\NationalCriminal.Repository.dll
+D:\Mohamed Salah - CSharpAssignment\Source\NationalCriminal\NationalCriminal.Repository\bin\Debug\NationalCriminal.Repository.pdb
+D:\Mohamed Salah - CSharpAssignment\Source\NationalCriminal\NationalCriminal.Repository\bin\Debug\NationalCriminal.DAL.dll
+D:\Mohamed Salah - CSharpAssignment\Source\NationalCriminal\NationalCriminal.Repository\bin\Debug\NationalCriminal.Helper.dll
+D:\Mohamed Salah - CSharpAssignment\Source\NationalCriminal\NationalCriminal.Repository\bin\Debug\NationalCriminal.DAL.pdb
+D:\Mohamed Salah - CSharpAssignment\Source\NationalCriminal\NationalCriminal.Repository\bin\Debug\NationalCriminal.Helper.pdb
+D:\Mohamed Salah - CSharpAssignment\Source\NationalCriminal\NationalCriminal.Repository\obj\Debug\NationalCriminal.Repository.csprojResolveAssemblyReference.cache
+D:\Mohamed Salah - CSharpAssignment\Source\NationalCriminal\NationalCriminal.Repository\obj\Debug\NationalCriminal.Repository.dll
+D:\Mohamed Salah - CSharpAssignment\Source\NationalCriminal\NationalCriminal.Repository\obj\Debug\NationalCriminal.Repository.pdb

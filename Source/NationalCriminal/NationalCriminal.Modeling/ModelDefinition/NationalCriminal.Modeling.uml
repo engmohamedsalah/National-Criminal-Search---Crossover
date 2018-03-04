@@ -1,0 +1,1296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+  dslVersion="1.0.0.0"
+  Id="2f1b0bd8-2468-4454-89b8-cb15c2fdad0b"
+  name="NationalCriminal.Modeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="3667c8bb-c650-4a68-b462-69fa08339d52">
+      <body>this two processes run 
+on thread done for each 
+request</body>
+      <annotatedElements>
+        <opaqueActionMoniker
+          Id="31b17e91-f112-48f6-a3f4-f003236d5cbd"
+          LastKnownName="Get Criminal From Database"
+          LastKnownLocation="NationalCriminal.Modeling.uml" />
+        <opaqueActionMoniker
+          Id="9d3fd0d1-76b1-41cc-b4fe-e647095c6f9b"
+          LastKnownName="send mail with result"
+          LastKnownLocation="NationalCriminal.Modeling.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <activity
+        Id="732568c4-7bdf-4049-b0ac-9d44344af9ee"
+        name="ActivityDiagram"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="cb37ca52-6690-42fd-8612-23f390d222f0"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="62dc8614-5daa-4efd-857a-5bd2eb7be2c1"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="70345b0c-e2be-404e-9fdb-42223e0d147f"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="NationalCriminal.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode
+            Id="6584d959-6fb1-4964-b9f9-781851bd2e26"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="8caeef54-bd9d-4891-b850-676aae66aca5"
+            name="Login to system"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5484adc7-dcf6-4802-8339-2440545f6208"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="938c6478-78f1-494f-baa2-8297302c0ee9"
+                  LastKnownName="Search"
+                  LastKnownLocation="NationalCriminal.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="70345b0c-e2be-404e-9fdb-42223e0d147f"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8182fb36-c3fa-477e-9d83-fffc655b32ed"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="8caeef54-bd9d-4891-b850-676aae66aca5"
+                  LastKnownName="Login to system"
+                  LastKnownLocation="NationalCriminal.Modeling.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="2491630f-ef60-4fca-8a35-8a35a039460b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="7df4532e-60f8-4db6-bf79-a4ee0cc413c9"
+                  LastKnownName="Register"
+                  LastKnownLocation="NationalCriminal.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="7df4532e-60f8-4db6-bf79-a4ee0cc413c9"
+            name="Register"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4e21685f-02e9-420d-b899-d5f1e86b7dba"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="8caeef54-bd9d-4891-b850-676aae66aca5"
+                  LastKnownName="Login to system"
+                  LastKnownLocation="NationalCriminal.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="e62afdf7-a534-4e82-bbc2-fd9bb72ff6d1"
+            name="WCF Search Criminal"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d5114136-5ae4-4b48-8303-63a2a36c1c3a"
+                isLeaf="false">
+                <forkNodeMoniker
+                  Id="951f9399-2a4b-43a0-9dcd-5c6e5f225ee0"
+                  LastKnownName="Fork1"
+                  LastKnownLocation="NationalCriminal.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="938c6478-78f1-494f-baa2-8297302c0ee9"
+            name="Search"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7622fd1d-a489-48a3-93db-6e0a287824d8"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e62afdf7-a534-4e82-bbc2-fd9bb72ff6d1"
+                  LastKnownName="WCF Search Criminal"
+                  LastKnownLocation="NationalCriminal.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="31b17e91-f112-48f6-a3f4-f003236d5cbd"
+            name="Get Criminal From Database"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="fb8a5c1e-7b86-4f4f-91e6-c3e227366e04"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="9d3fd0d1-76b1-41cc-b4fe-e647095c6f9b"
+                  LastKnownName="send mail with result"
+                  LastKnownLocation="NationalCriminal.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode
+            Id="951f9399-2a4b-43a0-9dcd-5c6e5f225ee0"
+            name="Fork1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="dea07e39-d81b-40b2-b25f-5a6e26cf4ef9"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="31b17e91-f112-48f6-a3f4-f003236d5cbd"
+                  LastKnownName="Get Criminal From Database"
+                  LastKnownLocation="NationalCriminal.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction
+            Id="9d3fd0d1-76b1-41cc-b4fe-e647095c6f9b"
+            name="send mail with result"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3a9111c6-71da-4755-80d3-e8b3ba85c9f9"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="bd587048-f610-492d-bc9f-0d4925b644d2"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="NationalCriminal.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="bd587048-f610-492d-bc9f-0d4925b644d2"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5e182362-baa6-4803-b830-93106eb82b9e"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="6584d959-6fb1-4964-b9f9-781851bd2e26"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="NationalCriminal.Modeling.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="0d11ff20-3a1c-4d19-b6d7-b825ff0e7a69"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="938c6478-78f1-494f-baa2-8297302c0ee9"
+                  LastKnownName="Search"
+                  LastKnownLocation="NationalCriminal.Modeling.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityParameterNode
+            Id="21ab9b51-134d-4768-9a9d-b88ff00868a3"
+            name="has account"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="78312d53-e027-4a61-9301-b33c30c44b0f"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </activityParameterNode>
+          <activityParameterNode
+            Id="4b73aa3b-9ecb-4a6e-8a8e-8f17af9e63ba"
+            name="Search again"
+            isLeaf="false"
+            ordering="Unordered"
+            isControlType="false">
+            <upperBound>
+              <literalInteger
+                Id="04bcfbfc-d910-46b1-b848-498586dd453e"
+                name="2147483647"
+                value="2147483647" />
+            </upperBound>
+          </activityParameterNode>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="e7c619ca-3515-4795-9251-86754e821b63"
+        name="SequenceDiagram"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <lifelines>
+          <lifeline
+            Id="41a6cb54-617e-427e-bfa3-9ae71e98ad79"
+            name="Lifeline1"
+            isActor="false"
+            lifelineDisplayName="Lifeline1" />
+          <lifeline
+            Id="185b5d41-3e3a-42f5-80a5-1743c42bdb2f"
+            name="Lifeline2"
+            isActor="false"
+            lifelineDisplayName="Lifeline2" />
+        </lifelines>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="e430bba6-6b9f-417b-94ee-290cee14104f"
+        name="SequenceDiagram"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="736cb1d3-ee0c-4fc1-b4d8-259f2fd30479"
+            name="BehaviorExecutionSpecification1">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="03f7a385-8db9-474c-9a19-f828bf50928c"
+                LastKnownName="ApplicationUserManager"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="41725a88-6a50-4f3d-8d91-b9ecf14a55f3"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="098fb478-718d-4d8e-a683-1ff349fe7eb8"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="5374cb60-d924-408d-ab42-41efeea481d7"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="cdbbe733-c221-403d-9ba4-acb5db2deb89"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="098fb478-718d-4d8e-a683-1ff349fe7eb8"
+            name="ExecutionOccurrenceSpecification1">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b3d15cb1-fb77-43f9-8d7a-1a37c6c3d6b2"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="NationalCriminal.Modeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="03f7a385-8db9-474c-9a19-f828bf50928c"
+                LastKnownName="ApplicationUserManager"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="9fabbd76-18c8-4739-a3de-948186552505"
+            name="MessageOccurrenceSpecification1">
+            <covered>
+              <lifelineMoniker
+                Id="2c2273ea-b422-402e-9a9b-ccc67be9e6b1"
+                LastKnownName="User &lt;Actor&gt;"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5374cb60-d924-408d-ab42-41efeea481d7"
+            name="MessageOccurrenceSpecification2">
+            <covered>
+              <lifelineMoniker
+                Id="03f7a385-8db9-474c-9a19-f828bf50928c"
+                LastKnownName="ApplicationUserManager"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="cdbbe733-c221-403d-9ba4-acb5db2deb89"
+            name="MessageOccurrenceSpecification3">
+            <covered>
+              <lifelineMoniker
+                Id="03f7a385-8db9-474c-9a19-f828bf50928c"
+                LastKnownName="ApplicationUserManager"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="41a7488e-7c88-4708-85e0-165ff5aa2326"
+            name="MessageOccurrenceSpecification4">
+            <covered>
+              <lifelineMoniker
+                Id="2c2273ea-b422-402e-9a9b-ccc67be9e6b1"
+                LastKnownName="User &lt;Actor&gt;"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="41725a88-6a50-4f3d-8d91-b9ecf14a55f3"
+            name="ExecutionOccurrenceSpecification2">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="0892b30e-15f6-4aa7-899d-a5e07912876b"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="NationalCriminal.Modeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="03f7a385-8db9-474c-9a19-f828bf50928c"
+                LastKnownName="ApplicationUserManager"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="986b4e00-a298-422a-b1be-a0bd9f5531ff"
+            name="BehaviorExecutionSpecification3">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="186a2371-b36d-4775-8f13-5275a84f7a26"
+                LastKnownName="MVC Application"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="bcf824cd-7d7b-46ef-95a6-e8089abab48d"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="7999e772-f1ec-400c-bf19-19ce09139901"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="f85a12d6-cb1c-4501-bd31-932f7f855ceb"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="997bf435-3238-4086-8745-3e79a18ff248"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="d26fd7d0-5923-498f-8974-be1835ee8979"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="5760aa79-7f54-4fc6-a54e-be11f03c3a6b"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="7999e772-f1ec-400c-bf19-19ce09139901"
+            name="ExecutionOccurrenceSpecification5">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="38a7b6b4-9c40-4d78-9e0c-a31f848eacbc"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="NationalCriminal.Modeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="186a2371-b36d-4775-8f13-5275a84f7a26"
+                LastKnownName="MVC Application"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f85a12d6-cb1c-4501-bd31-932f7f855ceb"
+            name="MessageOccurrenceSpecification10">
+            <covered>
+              <lifelineMoniker
+                Id="186a2371-b36d-4775-8f13-5275a84f7a26"
+                LastKnownName="MVC Application"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5ec14375-f89b-4cdb-a5cc-fe5fd36270ac"
+            name="MessageOccurrenceSpecification9">
+            <covered>
+              <lifelineMoniker
+                Id="2c2273ea-b422-402e-9a9b-ccc67be9e6b1"
+                LastKnownName="User &lt;Actor&gt;"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="bda2f6d2-6206-4600-83e3-0cb59e631c80"
+            name="BehaviorExecutionSpecification7">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="5fcd4d5f-a6a8-498d-9f92-1d17fd8ee45c"
+                LastKnownName="WCF Service"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="2e7008b9-81bd-4a64-b0ec-09f679390804"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="7c9f422e-31aa-499f-bbb9-73b5aa56fc1d"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="66decd0a-817b-42ac-83d0-d137801a8b75"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="c6f10a08-ba2d-4c22-8920-52f0103edc2e"
+                LastKnownName="MessageOccurrenceSpecification33"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="8c33b2c7-d941-4e5c-9b86-fdde6f4799b5"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="7c9f422e-31aa-499f-bbb9-73b5aa56fc1d"
+            name="ExecutionOccurrenceSpecification13">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="20e95acc-02ab-4cb1-8e84-df17daebf5f8"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="NationalCriminal.Modeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5fcd4d5f-a6a8-498d-9f92-1d17fd8ee45c"
+                LastKnownName="WCF Service"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="66decd0a-817b-42ac-83d0-d137801a8b75"
+            name="MessageOccurrenceSpecification26">
+            <covered>
+              <lifelineMoniker
+                Id="5fcd4d5f-a6a8-498d-9f92-1d17fd8ee45c"
+                LastKnownName="WCF Service"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="997bf435-3238-4086-8745-3e79a18ff248"
+            name="MessageOccurrenceSpecification25">
+            <covered>
+              <lifelineMoniker
+                Id="186a2371-b36d-4775-8f13-5275a84f7a26"
+                LastKnownName="MVC Application"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="fc4ea3f3-d4d4-4902-966d-a142dead38aa"
+            name="BehaviorExecutionSpecification9">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="0aa002b3-2805-488d-9d0d-d093c2acabf7"
+                LastKnownName="Service (BLL)"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="4a7188f6-5aaa-4aa9-a518-71281d6c4aa3"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="be05c32c-1d87-4030-bcf4-4e16c7898a37"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="214bacea-4e44-4ccc-8fec-dd7c25eebbd0"
+                LastKnownName="MessageOccurrenceSpecification34"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="b4de0cc2-a8f0-4c4f-91d8-e9f968dfe983"
+                LastKnownName="MessageOccurrenceSpecification41"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="b4644afd-a0b9-4f8a-9bc3-59867e65498f"
+                LastKnownName="MessageOccurrenceSpecification44"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="be05c32c-1d87-4030-bcf4-4e16c7898a37"
+            name="ExecutionOccurrenceSpecification17">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="d6954abc-79b7-4ace-8f34-0b89aad6d81b"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="NationalCriminal.Modeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0aa002b3-2805-488d-9d0d-d093c2acabf7"
+                LastKnownName="Service (BLL)"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="214bacea-4e44-4ccc-8fec-dd7c25eebbd0"
+            name="MessageOccurrenceSpecification34">
+            <covered>
+              <lifelineMoniker
+                Id="0aa002b3-2805-488d-9d0d-d093c2acabf7"
+                LastKnownName="Service (BLL)"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c6f10a08-ba2d-4c22-8920-52f0103edc2e"
+            name="MessageOccurrenceSpecification33">
+            <covered>
+              <lifelineMoniker
+                Id="5fcd4d5f-a6a8-498d-9f92-1d17fd8ee45c"
+                LastKnownName="WCF Service"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="4561c72d-b3b4-430b-8a1e-904dfb2709bf"
+            name="BehaviorExecutionSpecification12">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="83afbe05-262d-436f-82c6-dcf1ca2e72db"
+                LastKnownName="Data"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="8d19b1fc-882d-42d3-8d29-bda3bb53aa47"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="1dcb4003-030f-4a32-92e0-1e5bc4613040"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="8c0886e1-6147-4144-a85a-9ac7a318be20"
+                LastKnownName="MessageOccurrenceSpecification42"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="75d0f91e-cc9b-43bb-ab4a-9def6d18f18c"
+                LastKnownName="MessageOccurrenceSpecification43"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="1dcb4003-030f-4a32-92e0-1e5bc4613040"
+            name="ExecutionOccurrenceSpecification23">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="258bd290-591c-4c17-a5a8-ed4a3640b872"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="NationalCriminal.Modeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="83afbe05-262d-436f-82c6-dcf1ca2e72db"
+                LastKnownName="Data"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8c0886e1-6147-4144-a85a-9ac7a318be20"
+            name="MessageOccurrenceSpecification42">
+            <covered>
+              <lifelineMoniker
+                Id="83afbe05-262d-436f-82c6-dcf1ca2e72db"
+                LastKnownName="Data"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b4de0cc2-a8f0-4c4f-91d8-e9f968dfe983"
+            name="MessageOccurrenceSpecification41">
+            <covered>
+              <lifelineMoniker
+                Id="0aa002b3-2805-488d-9d0d-d093c2acabf7"
+                LastKnownName="Service (BLL)"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d26fd7d0-5923-498f-8974-be1835ee8979"
+            name="MessageOccurrenceSpecification28">
+            <covered>
+              <lifelineMoniker
+                Id="186a2371-b36d-4775-8f13-5275a84f7a26"
+                LastKnownName="MVC Application"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="8c33b2c7-d941-4e5c-9b86-fdde6f4799b5"
+            name="MessageOccurrenceSpecification27">
+            <covered>
+              <lifelineMoniker
+                Id="5fcd4d5f-a6a8-498d-9f92-1d17fd8ee45c"
+                LastKnownName="WCF Service"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="75d0f91e-cc9b-43bb-ab4a-9def6d18f18c"
+            name="MessageOccurrenceSpecification43">
+            <covered>
+              <lifelineMoniker
+                Id="83afbe05-262d-436f-82c6-dcf1ca2e72db"
+                LastKnownName="Data"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b4644afd-a0b9-4f8a-9bc3-59867e65498f"
+            name="MessageOccurrenceSpecification44">
+            <covered>
+              <lifelineMoniker
+                Id="0aa002b3-2805-488d-9d0d-d093c2acabf7"
+                LastKnownName="Service (BLL)"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="2e7008b9-81bd-4a64-b0ec-09f679390804"
+            name="ExecutionOccurrenceSpecification14">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e27a4657-9913-4782-bcae-7e41b914c3b2"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="NationalCriminal.Modeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="5fcd4d5f-a6a8-498d-9f92-1d17fd8ee45c"
+                LastKnownName="WCF Service"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="8d19b1fc-882d-42d3-8d29-bda3bb53aa47"
+            name="ExecutionOccurrenceSpecification24">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b6f195d4-7b4c-4fc6-b73a-fca0a07991fe"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="NationalCriminal.Modeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="83afbe05-262d-436f-82c6-dcf1ca2e72db"
+                LastKnownName="Data"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="5760aa79-7f54-4fc6-a54e-be11f03c3a6b"
+            name="MessageOccurrenceSpecification11">
+            <covered>
+              <lifelineMoniker
+                Id="186a2371-b36d-4775-8f13-5275a84f7a26"
+                LastKnownName="MVC Application"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="f792fbe6-dab9-4a6c-83b0-954dccc7575c"
+            name="MessageOccurrenceSpecification12">
+            <covered>
+              <lifelineMoniker
+                Id="2c2273ea-b422-402e-9a9b-ccc67be9e6b1"
+                LastKnownName="User &lt;Actor&gt;"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="bcf824cd-7d7b-46ef-95a6-e8089abab48d"
+            name="ExecutionOccurrenceSpecification6">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="5090dbc7-88dc-45f1-8568-0fe7b66de238"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="NationalCriminal.Modeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="186a2371-b36d-4775-8f13-5275a84f7a26"
+                LastKnownName="MVC Application"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="4a7188f6-5aaa-4aa9-a518-71281d6c4aa3"
+            name="ExecutionOccurrenceSpecification18">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="c62d22e7-46a6-450d-8838-859222bc8e6f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="NationalCriminal.Modeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="0aa002b3-2805-488d-9d0d-d093c2acabf7"
+                LastKnownName="Service (BLL)"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="0d5f8932-ae9b-409b-a3dc-dd108bc05ce4"
+            name="BehaviorExecutionSpecification11">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="2c2273ea-b422-402e-9a9b-ccc67be9e6b1"
+                LastKnownName="User &lt;Actor&gt;"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="432099b8-1830-4e99-980e-aac628820608"
+                LastKnownName="ExecutionOccurrenceSpecification22"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="7cce9a8f-95fd-456d-985a-3286dffce9f9"
+                LastKnownName="ExecutionOccurrenceSpecification21"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="d25b6a26-7d4f-46c8-b1b4-2b56ead5cbe2"
+                LastKnownName="MessageOccurrenceSpecification40"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="7cce9a8f-95fd-456d-985a-3286dffce9f9"
+            name="ExecutionOccurrenceSpecification21">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="9a1eb299-c53b-457b-80fc-dbe059106592"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="NationalCriminal.Modeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="2c2273ea-b422-402e-9a9b-ccc67be9e6b1"
+                LastKnownName="User &lt;Actor&gt;"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="3b047b8a-985f-4153-a0f2-3aaefafc1bf9"
+            name="MessageOccurrenceSpecification39">
+            <covered>
+              <lifelineMoniker
+                Id="0aa002b3-2805-488d-9d0d-d093c2acabf7"
+                LastKnownName="Service (BLL)"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d25b6a26-7d4f-46c8-b1b4-2b56ead5cbe2"
+            name="MessageOccurrenceSpecification40">
+            <covered>
+              <lifelineMoniker
+                Id="2c2273ea-b422-402e-9a9b-ccc67be9e6b1"
+                LastKnownName="User &lt;Actor&gt;"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="432099b8-1830-4e99-980e-aac628820608"
+            name="ExecutionOccurrenceSpecification22">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="62176619-f92a-4b76-9b2f-b07283c76b23"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="NationalCriminal.Modeling.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="2c2273ea-b422-402e-9a9b-ccc67be9e6b1"
+                LastKnownName="User &lt;Actor&gt;"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="2c2273ea-b422-402e-9a9b-ccc67be9e6b1"
+            name="User &lt;Actor&gt;"
+            isActor="false"
+            lifelineDisplayName="User &lt;Actor&gt;">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="9fabbd76-18c8-4739-a3de-948186552505"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="41a7488e-7c88-4708-85e0-165ff5aa2326"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="5ec14375-f89b-4cdb-a5cc-fe5fd36270ac"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="f792fbe6-dab9-4a6c-83b0-954dccc7575c"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="7cce9a8f-95fd-456d-985a-3286dffce9f9"
+                LastKnownName="ExecutionOccurrenceSpecification21"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="432099b8-1830-4e99-980e-aac628820608"
+                LastKnownName="ExecutionOccurrenceSpecification22"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="03f7a385-8db9-474c-9a19-f828bf50928c"
+            name="ApplicationUserManager"
+            isActor="false"
+            lifelineDisplayName="ApplicationUserManager">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="098fb478-718d-4d8e-a683-1ff349fe7eb8"
+                LastKnownName="ExecutionOccurrenceSpecification1"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="41725a88-6a50-4f3d-8d91-b9ecf14a55f3"
+                LastKnownName="ExecutionOccurrenceSpecification2"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="186a2371-b36d-4775-8f13-5275a84f7a26"
+            name="MVC Application"
+            isActor="false"
+            lifelineDisplayName="MVC Application">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="7999e772-f1ec-400c-bf19-19ce09139901"
+                LastKnownName="ExecutionOccurrenceSpecification5"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="bcf824cd-7d7b-46ef-95a6-e8089abab48d"
+                LastKnownName="ExecutionOccurrenceSpecification6"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="5fcd4d5f-a6a8-498d-9f92-1d17fd8ee45c"
+            name="WCF Service"
+            isActor="false"
+            lifelineDisplayName="WCF Service">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="7c9f422e-31aa-499f-bbb9-73b5aa56fc1d"
+                LastKnownName="ExecutionOccurrenceSpecification13"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="2e7008b9-81bd-4a64-b0ec-09f679390804"
+                LastKnownName="ExecutionOccurrenceSpecification14"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="0aa002b3-2805-488d-9d0d-d093c2acabf7"
+            name="Service (BLL)"
+            isActor="false"
+            lifelineDisplayName="Service (BLL)">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="be05c32c-1d87-4030-bcf4-4e16c7898a37"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="4a7188f6-5aaa-4aa9-a518-71281d6c4aa3"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="3b047b8a-985f-4153-a0f2-3aaefafc1bf9"
+                LastKnownName="MessageOccurrenceSpecification39"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="83afbe05-262d-436f-82c6-dcf1ca2e72db"
+            name="Data"
+            isActor="false"
+            lifelineDisplayName="Data">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="1dcb4003-030f-4a32-92e0-1e5bc4613040"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="8d19b1fc-882d-42d3-8d29-bda3bb53aa47"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="345cdef6-ebbd-4ec6-97c8-545638a9231f"
+            name="Register"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="9fabbd76-18c8-4739-a3de-948186552505"
+                LastKnownName="MessageOccurrenceSpecification1"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5374cb60-d924-408d-ab42-41efeea481d7"
+                LastKnownName="MessageOccurrenceSpecification2"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="a544c5e3-891a-481c-9156-1d9d9403993c"
+            name="&lt;&lt;successfully registered&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="cdbbe733-c221-403d-9ba4-acb5db2deb89"
+                LastKnownName="MessageOccurrenceSpecification3"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="41a7488e-7c88-4708-85e0-165ff5aa2326"
+                LastKnownName="MessageOccurrenceSpecification4"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="1ed84a2e-a0e3-48d6-a704-0c06a86a8bb8"
+            name="Search for criminal"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5ec14375-f89b-4cdb-a5cc-fe5fd36270ac"
+                LastKnownName="MessageOccurrenceSpecification9"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f85a12d6-cb1c-4501-bd31-932f7f855ceb"
+                LastKnownName="MessageOccurrenceSpecification10"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="c5fb5c06-978d-4ad1-b4fd-675b5a05b096"
+            name="Seach criminal"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="997bf435-3238-4086-8745-3e79a18ff248"
+                LastKnownName="MessageOccurrenceSpecification25"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="66decd0a-817b-42ac-83d0-d137801a8b75"
+                LastKnownName="MessageOccurrenceSpecification26"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="73beead5-bc66-4379-af6e-d7f11550cfc9"
+            name="get Profile that match the parameters"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c6f10a08-ba2d-4c22-8920-52f0103edc2e"
+                LastKnownName="MessageOccurrenceSpecification33"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="214bacea-4e44-4ccc-8fec-dd7c25eebbd0"
+                LastKnownName="MessageOccurrenceSpecification34"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="45c11660-caa1-4a00-bb1b-92b5f6489aee"
+            name="get data from Database"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b4de0cc2-a8f0-4c4f-91d8-e9f968dfe983"
+                LastKnownName="MessageOccurrenceSpecification41"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8c0886e1-6147-4144-a85a-9ac7a318be20"
+                LastKnownName="MessageOccurrenceSpecification42"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="79e335fc-f607-4dc1-9a13-d0c86f2ad26f"
+            name="&lt;&lt;return no error in the input &gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="8c33b2c7-d941-4e5c-9b86-fdde6f4799b5"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d26fd7d0-5923-498f-8974-be1835ee8979"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="41f99b8d-b071-4867-938b-06bc7b1f665e"
+            name="&lt;&lt;result&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="75d0f91e-cc9b-43bb-ab4a-9def6d18f18c"
+                LastKnownName="MessageOccurrenceSpecification43"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b4644afd-a0b9-4f8a-9bc3-59867e65498f"
+                LastKnownName="MessageOccurrenceSpecification44"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="cba30a15-481b-40ec-a282-1d29df72f022"
+            name="&lt;&lt;result will be sent to your registerd email&gt;&gt;"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="5760aa79-7f54-4fc6-a54e-be11f03c3a6b"
+                LastKnownName="MessageOccurrenceSpecification11"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="f792fbe6-dab9-4a6c-83b0-954dccc7575c"
+                LastKnownName="MessageOccurrenceSpecification12"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="ea233f9d-4d60-455b-a0ea-97b30a579311"
+            name="Email with the results"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="3b047b8a-985f-4153-a0f2-3aaefafc1bf9"
+                LastKnownName="MessageOccurrenceSpecification39"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d25b6a26-7d4f-46c8-b1b4-2b56ead5cbe2"
+                LastKnownName="MessageOccurrenceSpecification40"
+                LastKnownLocation="NationalCriminal.Modeling.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b3d15cb1-fb77-43f9-8d7a-1a37c6c3d6b2"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0892b30e-15f6-4aa7-899d-a5e07912876b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="38a7b6b4-9c40-4d78-9e0c-a31f848eacbc"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="5090dbc7-88dc-45f1-8568-0fe7b66de238"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="20e95acc-02ab-4cb1-8e84-df17daebf5f8"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e27a4657-9913-4782-bcae-7e41b914c3b2"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d6954abc-79b7-4ace-8f34-0b89aad6d81b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="c62d22e7-46a6-450d-8838-859222bc8e6f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="9a1eb299-c53b-457b-80fc-dbe059106592"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="62176619-f92a-4b76-9b2f-b07283c76b23"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="258bd290-591c-4c17-a5a8-ed4a3640b872"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b6f195d4-7b4c-4fc6-b73a-fca0a07991fe"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

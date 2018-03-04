@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2></h2>
+
+
+@Html.Label((ViewBag.message!=null)?(string)ViewBag.message:"")
+
+
+<div>
+    @Html.ActionLink("back", (string)ViewBag.backAction, (string)ViewBag.backController)
+    
+</div>

@@ -1,0 +1,96 @@
+﻿@model NationalCriminal.ViewModel.SearchCriminalProfileViewModel
+
+@{
+    ViewBag.Title = "Search Page";
+}
+
+<h2>Search</h2>
+
+
+@using (Html.BeginForm("DoSearch", "SearchCriminalProfile", FormMethod.Post)) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4></h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.fromAge, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.fromAge, new { htmlAttributes = new { @class = "form-control", @type = "number", maxlength = "2" } })
+                @Html.ValidationMessageFor(model => model.fromAge, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.toAge, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.toAge, new { htmlAttributes = new { @class = "form-control", @type = "number", maxlength = "2" } })
+                @Html.ValidationMessageFor(model => model.toAge, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.fromHeight, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.fromHeight, new { htmlAttributes = new { @class = "form-control", @type = "number", maxlength = "3" } })
+                @Html.ValidationMessageFor(model => model.fromHeight, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.toHeight, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.toHeight, new { htmlAttributes = new { @class = "form-control", @type = "number", maxlength = "3" } })
+                @Html.ValidationMessageFor(model => model.toHeight, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.fromWeight, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.fromWeight, new { htmlAttributes = new { @class = "form-control" }, @type = "number", maxlength = "3" })
+                @Html.ValidationMessageFor(model => model.fromWeight, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.toWeight, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.toWeight, new { htmlAttributes = new { @class = "form-control", @type = "number", maxlength = "3" } })
+                @Html.ValidationMessageFor(model => model.toWeight, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.NationalityId, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @*@Html.EditorFor(model => model.NationalityId, new { htmlAttributes = new { @class = "form-control", @type = "number" } })*@
+                
+                @Html.DropDownListFor(model => model.NationalityId, (List<SelectListItem>)ViewBag.listCountriesItems);
+                @Html.ValidationMessageFor(model => model.NationalityId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Search" class="btn btn-default"  />
+            </div>
+        </div>
+    </div>
+}
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,19 @@
+C:\Users\mabdeltawab\Documents\Visual Studio 2015\Projects\NationalCriminal\NationalCriminal.DAL\bin\Debug\NationalCriminal.DAL.dll.config
+C:\Users\mabdeltawab\Documents\Visual Studio 2015\Projects\NationalCriminal\NationalCriminal.DAL\bin\Debug\NationalCriminal.DAL.dll
+C:\Users\mabdeltawab\Documents\Visual Studio 2015\Projects\NationalCriminal\NationalCriminal.DAL\bin\Debug\NationalCriminal.DAL.pdb
+C:\Users\mabdeltawab\Documents\Visual Studio 2015\Projects\NationalCriminal\NationalCriminal.DAL\obj\Debug\NationalCriminal.DAL.dll
+C:\Users\mabdeltawab\Documents\Visual Studio 2015\Projects\NationalCriminal\NationalCriminal.DAL\obj\Debug\NationalCriminal.DAL.pdb
+C:\Users\mabdeltawab\Documents\Visual Studio 2015\Projects\NationalCriminal\NationalCriminal.DAL\bin\Debug\NationalCriminal.DAL.dll.CodeAnalysisLog.xml
+C:\Users\mabdeltawab\Documents\Visual Studio 2015\Projects\NationalCriminal\NationalCriminal.DAL\bin\Debug\NationalCriminal.DAL.dll.lastcodeanalysissucceeded
+D:\New folder\Source\NationalCriminal\NationalCriminal.DAL\bin\Debug\NationalCriminal.DAL.dll.config
+D:\New folder\Source\NationalCriminal\NationalCriminal.DAL\bin\Debug\NationalCriminal.DAL.dll
+D:\New folder\Source\NationalCriminal\NationalCriminal.DAL\bin\Debug\NationalCriminal.DAL.pdb
+D:\New folder\Source\NationalCriminal\NationalCriminal.DAL\obj\Debug\NationalCriminal.DAL.csprojResolveAssemblyReference.cache
+D:\New folder\Source\NationalCriminal\NationalCriminal.DAL\obj\Debug\NationalCriminal.DAL.dll
+D:\New folder\Source\NationalCriminal\NationalCriminal.DAL\obj\Debug\NationalCriminal.DAL.pdb
+D:\Mohamed Salah - CSharpAssignment\Source\NationalCriminal\NationalCriminal.DAL\bin\Debug\NationalCriminal.DAL.dll.config
+D:\Mohamed Salah - CSharpAssignment\Source\NationalCriminal\NationalCriminal.DAL\bin\Debug\NationalCriminal.DAL.dll
+D:\Mohamed Salah - CSharpAssignment\Source\NationalCriminal\NationalCriminal.DAL\bin\Debug\NationalCriminal.DAL.pdb
+D:\Mohamed Salah - CSharpAssignment\Source\NationalCriminal\NationalCriminal.DAL\obj\Debug\NationalCriminal.DAL.csprojResolveAssemblyReference.cache
+D:\Mohamed Salah - CSharpAssignment\Source\NationalCriminal\NationalCriminal.DAL\obj\Debug\NationalCriminal.DAL.dll
+D:\Mohamed Salah - CSharpAssignment\Source\NationalCriminal\NationalCriminal.DAL\obj\Debug\NationalCriminal.DAL.pdb

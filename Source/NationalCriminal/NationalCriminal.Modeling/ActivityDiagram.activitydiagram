@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="e7f0701b-807c-4a3a-bf7f-c25c0524f385" name="ActivityDiagram" linkedPackageId="253ce3f1-1a93-426a-acd4-4202dc14e412" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="295c5f04-13c1-422e-9ed8-88035109018d">
+      <elementDefinition Id="3667c8bb-c650-4a68-b462-69fa08339d52" />
+      <body>this two processes run 
+on thread done for each 
+request</body>
+      <annotatedElements>
+        <opaqueActionMoniker Id="8e2c3918-7092-4d89-84c8-d7f868f0fff7" LastKnownName="Get Criminal From Database" />
+        <opaqueActionMoniker Id="3d5e83de-cad9-41fc-b0e8-94e47b5da7f6" LastKnownName="send mail with result" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="851d01a6-dae5-4a93-9700-d068dc2eb74f">
+      <profileInstance Id="f302a80d-2dec-4d5c-b7e7-6bd3d8715476" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="6da9ce0c-b5e8-4f30-98b0-198506a9adac">
+      <profileInstance Id="ca2ee88b-1f4b-4caf-a8c5-fb3e3d9b9fd4" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="aff54330-c014-4418-8380-3958d56a7e72" name="ActivityDiagram" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="732568c4-7bdf-4049-b0ac-9d44344af9ee" />
+        <nodes>
+          <initialNode Id="20c5b08a-bc4c-4c41-a2a4-d4a56faa9d5f" name="Initial1" isLeaf="false">
+            <elementDefinition Id="cb37ca52-6690-42fd-8612-23f390d222f0" />
+            <flowNodeTargets>
+              <controlFlow Id="c8ba80b0-da93-466c-a6a6-9b256300dc6b" isLeaf="false">
+                <decisionNodeMoniker Id="32c22e93-d5fa-4256-8863-e9e5a2f43c8d" LastKnownName="Decision1" />
+                <elementDefinition Id="62dc8614-5daa-4efd-857a-5bd2eb7be2c1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <activityFinalNode Id="b2e2b529-5a88-475b-8f3c-9110fe8224e1" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="6584d959-6fb1-4964-b9f9-781851bd2e26" />
+          </activityFinalNode>
+          <opaqueAction Id="265a8826-42ca-4986-b330-e211fc482e6c" name="Login to system" isLeaf="false">
+            <elementDefinition Id="8caeef54-bd9d-4891-b850-676aae66aca5" />
+            <flowNodeTargets>
+              <controlFlow Id="563872d5-66c8-4689-a065-86f2165064eb" isLeaf="false">
+                <opaqueActionMoniker Id="6f9c31d6-03d9-4429-8976-4fb7e1260ffa" LastKnownName="Search" />
+                <elementDefinition Id="5484adc7-dcf6-4802-8339-2440545f6208" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="32c22e93-d5fa-4256-8863-e9e5a2f43c8d" name="Decision1" isLeaf="false">
+            <elementDefinition Id="70345b0c-e2be-404e-9fdb-42223e0d147f" />
+            <flowNodeTargets>
+              <controlFlow Id="16370817-8970-4ef4-af09-6c19b954ba6d" isLeaf="false">
+                <opaqueActionMoniker Id="265a8826-42ca-4986-b330-e211fc482e6c" LastKnownName="Login to system" />
+                <elementDefinition Id="8182fb36-c3fa-477e-9d83-fffc655b32ed" />
+              </controlFlow>
+              <controlFlow Id="7cc862ea-a666-414f-8d20-56d14ad18659" isLeaf="false">
+                <opaqueActionMoniker Id="76c1fb17-c8c8-4e5d-9512-9ffbddb6217a" LastKnownName="Register" />
+                <elementDefinition Id="2491630f-ef60-4fca-8a35-8a35a039460b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="76c1fb17-c8c8-4e5d-9512-9ffbddb6217a" name="Register" isLeaf="false">
+            <elementDefinition Id="7df4532e-60f8-4db6-bf79-a4ee0cc413c9" />
+            <flowNodeTargets>
+              <controlFlow Id="e63941f2-b7d2-48b2-9844-f1edf1a81d47" isLeaf="false">
+                <opaqueActionMoniker Id="265a8826-42ca-4986-b330-e211fc482e6c" LastKnownName="Login to system" />
+                <elementDefinition Id="4e21685f-02e9-420d-b899-d5f1e86b7dba" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="6dee1afe-424f-4eb4-b22e-239a80fc359c" name="WCF Search Criminal" isLeaf="false">
+            <elementDefinition Id="e62afdf7-a534-4e82-bbc2-fd9bb72ff6d1" />
+            <flowNodeTargets>
+              <controlFlow Id="bae38dda-6a78-4a0d-8063-9f4dd480225b" isLeaf="false">
+                <forkNodeMoniker Id="4b401cb5-22b6-457a-8ceb-346f5eadf9d7" LastKnownName="Fork1" />
+                <elementDefinition Id="d5114136-5ae4-4b48-8303-63a2a36c1c3a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="6f9c31d6-03d9-4429-8976-4fb7e1260ffa" name="Search" isLeaf="false">
+            <elementDefinition Id="938c6478-78f1-494f-baa2-8297302c0ee9" />
+            <flowNodeTargets>
+              <controlFlow Id="af967819-a98d-424f-a10f-0a37de8eadf1" isLeaf="false">
+                <opaqueActionMoniker Id="6dee1afe-424f-4eb4-b22e-239a80fc359c" LastKnownName="WCF Search Criminal" />
+                <elementDefinition Id="7622fd1d-a489-48a3-93db-6e0a287824d8" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="8e2c3918-7092-4d89-84c8-d7f868f0fff7" name="Get Criminal From Database" isLeaf="false">
+            <elementDefinition Id="31b17e91-f112-48f6-a3f4-f003236d5cbd" />
+            <flowNodeTargets>
+              <controlFlow Id="7352c8bc-fb60-43ba-973d-078c3814ebbf" isLeaf="false">
+                <opaqueActionMoniker Id="3d5e83de-cad9-41fc-b0e8-94e47b5da7f6" LastKnownName="send mail with result" />
+                <elementDefinition Id="fb8a5c1e-7b86-4f4f-91e6-c3e227366e04" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <forkNode Id="4b401cb5-22b6-457a-8ceb-346f5eadf9d7" name="Fork1" isLeaf="false">
+            <elementDefinition Id="951f9399-2a4b-43a0-9dcd-5c6e5f225ee0" />
+            <flowNodeTargets>
+              <controlFlow Id="116ece1e-10b5-4cd5-b572-a6b23fbb9087" isLeaf="false">
+                <opaqueActionMoniker Id="8e2c3918-7092-4d89-84c8-d7f868f0fff7" LastKnownName="Get Criminal From Database" />
+                <elementDefinition Id="dea07e39-d81b-40b2-b25f-5a6e26cf4ef9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction Id="3d5e83de-cad9-41fc-b0e8-94e47b5da7f6" name="send mail with result" isLeaf="false">
+            <elementDefinition Id="9d3fd0d1-76b1-41cc-b4fe-e647095c6f9b" />
+            <flowNodeTargets>
+              <controlFlow Id="2b07c672-6c75-452a-b285-eb40ffa02e17" isLeaf="false">
+                <decisionNodeMoniker Id="8b5ec9cf-b77c-408d-b5a8-b5d8fd267d55" LastKnownName="Decision2" />
+                <elementDefinition Id="3a9111c6-71da-4755-80d3-e8b3ba85c9f9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="8b5ec9cf-b77c-408d-b5a8-b5d8fd267d55" name="Decision2" isLeaf="false">
+            <elementDefinition Id="bd587048-f610-492d-bc9f-0d4925b644d2" />
+            <flowNodeTargets>
+              <controlFlow Id="4821f2d4-59f5-4f76-9a3f-527df93b468b" isLeaf="false">
+                <activityFinalNodeMoniker Id="b2e2b529-5a88-475b-8f3c-9110fe8224e1" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="5e182362-baa6-4803-b830-93106eb82b9e" />
+              </controlFlow>
+              <controlFlow Id="e1cd8252-797a-4f67-8094-f5ea01aa66da" isLeaf="false">
+                <opaqueActionMoniker Id="6f9c31d6-03d9-4429-8976-4fb7e1260ffa" LastKnownName="Search" />
+                <elementDefinition Id="0d11ff20-3a1c-4d19-b6d7-b825ff0e7a69" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityParameterNode Id="c2d1d009-ef1a-448d-ba14-7d398f0cbbc6" name="has account" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="21ab9b51-134d-4768-9a9d-b88ff00868a3" />
+            <upperBound>
+              <literalInteger Id="61207532-f35c-48aa-80ef-461cb2016467" name="2147483647" value="2147483647">
+                <elementDefinition Id="78312d53-e027-4a61-9301-b33c30c44b0f" />
+              </literalInteger>
+            </upperBound>
+          </activityParameterNode>
+          <activityParameterNode Id="00350635-a3a3-4717-8c07-d776d36e221b" name="Search again" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="4b73aa3b-9ecb-4a6e-8a8e-8f17af9e63ba" />
+            <upperBound>
+              <literalInteger Id="ee8d2dca-4748-4ab5-8299-5293bac82a64" name="2147483647" value="2147483647">
+                <elementDefinition Id="04bcfbfc-d910-46b1-b848-498586dd453e" />
+              </literalInteger>
+            </upperBound>
+          </activityParameterNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="253ce3f1-1a93-426a-acd4-4202dc14e412" name="NationalCriminal.Modeling">
+    <elementDefinition Id="2f1b0bd8-2468-4454-89b8-cb15c2fdad0b" />
+  </package>
+</activityRootModel>
